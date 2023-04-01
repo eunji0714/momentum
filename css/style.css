@@ -5,6 +5,7 @@ body{
     display:flex;
     flex-direction: column;
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 img {
@@ -49,6 +50,9 @@ img {
     margin-bottom: 30px;
   }
   
+  #login-form button{
+    font-size:12px;
+  }
   #weather{
     position: fixed;
     top:0;
@@ -68,6 +72,11 @@ img {
     font-weight: 600;
   }
 
+  input::placeholder{
+    color:black;
+    opacity: 90%;
+  }
+
 #todo-form{
     margin-bottom: 20px;
 }
@@ -76,13 +85,12 @@ img {
 }
 
   #todo-list{
-    
     background-color: white;
     width:60%;
     margin: 0 auto;
     opacity: 70%;
     border-radius: 10px;
-    padding:10px;
+    padding:7px 10px;
     list-style-type: none;
     font-size:13px;
     font-weight: 800;
